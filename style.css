@@ -19,7 +19,7 @@ section {
 
 h1 {
     font-size: 2.25rem;
-    margin-bottom: 1.875rem;
+    margin-bottom: 1rem;
 }
 #inicio article{
     width:100%;
@@ -49,10 +49,11 @@ h1 {
     width: 200px;
 }
 
-p {
+h2 {
     font-size: 1.125rem;
     line-height: 1.5;
-    color: var(--gray-600);
+    color: var(--gray-400);
+    font-weight: 400;
 }
 
 footer {    
@@ -69,10 +70,16 @@ footer {
 @media only screen and (min-width: 768px) {
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: var(--gray-800);
         padding: 1.25rem;
+    }
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 64%;
     }
 
     .logo img {
@@ -114,7 +121,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         background-color: var(--gray-800);
-        padding: 0.625rem;
+        padding: 0.625rem ;
     }
 
     .logo img {
