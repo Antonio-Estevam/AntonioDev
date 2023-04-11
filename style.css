@@ -6,16 +6,23 @@ Aplicações multiplataformas exclusivas, para sistemas operacionais Windows, Li
 Aplicação Web
 Desde uma simples landpage, sites pessoais ou comercial, até lojas virtuais e sistemas complexos para internet.*/
 
+section{
+    height: calc( 100vh - 80px);
+    min-height: 90vh;
+    margin: 0;  
+}
+
+section {
+   /* margin: 3.125rem 0;*/
+}
 
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3.125rem;
+    max-width: 62%;
+    /*padding: 3.125rem;*/
 }
 
-section {
-    margin: 3.125rem 0;
-}
 
 h1 {
     font-size: 2.25rem;
@@ -26,6 +33,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 161px;
+    padding-bottom: 200px;
 }
 #inicio article .content{
     max-width: 62%;
@@ -33,6 +42,7 @@ h1 {
 #inicio article h1 {
     font-size: 3.5rem;
     align-items: center;
+    font-weight: 600;
     animation: gradient 5s ease infinite;
     background:linear-gradient(132.01deg, rgba(131, 116, 204, 0.78) 29.26%, rgba(103, 71, 255, 0.78) 60.59%);
         -webkit-background-clip: text;
@@ -46,11 +56,12 @@ h1 {
 }
 
 #inicio article .imgContent img {
-    width: 200px;
+    width: 230px;
+    opacity: 0.9;
 }
 
 h2 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.5;
     color: var(--gray-400);
     font-weight: 400;
@@ -63,11 +74,6 @@ footer {
     font-size: 0.875rem;
 }
 
-
-
-/* Estilos para telas grandes */
-
-@media only screen and (min-width: 768px) {
     header {
         display: flex;
         justify-content: center;
@@ -99,6 +105,7 @@ footer {
     nav ul li a {
         text-decoration: none;
         color: var(--gray-400);
+        font-size: 18px;
     }
     .contatos {
         background: red;
@@ -112,7 +119,7 @@ footer {
         color: var(--blue-700);
         background: var(--blue-700)
     }
-}
+
 
 /* Estilos para telas pequenas */
 @media only screen and (max-width: 767px) {
