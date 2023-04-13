@@ -26,14 +26,14 @@ main {
 
 h1 {
     font-size: 2.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
-#inicio article{
+/*#inicio*/ article{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 161px;
+    padding-top: 16%;
     padding-bottom: 200px;
 }
 #inicio article .content{
@@ -51,10 +51,6 @@ h1 {
         text-fill-color: transparent;
 }
 
-#inicio article .imgContent{
-    //flex: 1;
-}
-
 #inicio article .imgContent img {
     width: 230px;
     opacity: 0.9;
@@ -65,6 +61,27 @@ h2 {
     line-height: 1.5;
     color: var(--gray-400);
     font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.links-redes-spcia {
+    display: flex;
+    gap: 1rem;
+}
+
+.links-redes-spcia a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--gray-100);
+    background: #6042e8;
+    padding: 7px 6px 2px 6px;
+    border-radius: 8px;
+    filter: brightness(0.9);
+    transition: filter 2s;
+}
+
+.links-redes-spcia a:hover{
+    filter: brightness(1.1);
 }
 
 footer {    
@@ -80,6 +97,9 @@ footer {
         align-items: center;
         background-color: var(--gray-800);
         padding: 1.25rem;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
     }
     header div {
         display: flex;

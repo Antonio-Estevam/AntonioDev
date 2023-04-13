@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root{
     --white: #FFF;
   --gray-100: #E1E1E6;
@@ -11,8 +15,8 @@
   --blue-300: #8374CC;
   --blue-500: #7529D6;
   --blue-700: #462DBF;
-  --red-500': #AB222E;
-  --red-700': #7A1921;
+  --red-500: #AB222E;
+  --red-700: #7A1921;
   --yellow-500: #FBA94C;
 }
 
