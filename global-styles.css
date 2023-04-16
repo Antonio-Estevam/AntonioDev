@@ -12,9 +12,9 @@ html {
   --gray-700: #29292E;
   --gray-800: #202024;
   --gray-900: #121214;
-  --blue-300: #8374CC;
-  --blue-500: #7529D6;
-  --blue-700: #462DBF;
+  --blue-300: #5D47C7;
+  --blue-500: #462DBF;
+  --blue-700: #2C0BCB;
   --red-500: #AB222E;
   --red-700: #7A1921;
   --yellow-500: #FBA94C;
@@ -33,7 +33,7 @@ html {
   }
   body {
      background: var(--gray-900);
-     color: var(--gray-300);
+     color: var(--gray-100);
      -webkit-font-smoothing: antialiased;
  }
   body, input, textarea {

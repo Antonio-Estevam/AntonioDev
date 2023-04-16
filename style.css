@@ -1,8 +1,10 @@
 
 /*Aplicação Web
 Desde uma simples landpage, sites pessoais ou comercial, até lojas virtuais e sistemas complexos para internet.
+
 Aplicação Desktop
 Aplicações multiplataformas exclusivas, para sistemas operacionais Windows, Linux e Mac OS, onde o usuário necessita instalar o software em sua máquina.
+
 Aplicação Web
 Desde uma simples landpage, sites pessoais ou comercial, até lojas virtuais e sistemas complexos para internet.*/
 
@@ -33,12 +35,16 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16%;
+    padding-top: 20%;
     padding-bottom: 200px;
+    z-index: 1;
 }
+
+
 #inicio article .content{
     max-width: 62%;
 }
+
 #inicio article h1 {
     font-size: 3.5rem;
     align-items: center;
@@ -140,6 +146,123 @@ footer {
         background: var(--blue-700)
     }
 
+    #sobre {
+        padding-top: 200px;
+    }
+
+    #sobre article {
+        display: flex;
+        background: var(--gray-800);
+        border-radius: 8px;
+        padding: 3rem; 
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #sobre article .containeImg img{
+        width: 16.25rem;
+    }
+
+    #sobre article .containeTexto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sobre article .containeTexto h1{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #sobre article .containeTexto h1 span{
+        color: var(--blue-800);
+    }
+
+    #sobre article .containeTexto p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #servicos article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #servicos article h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #servicos article .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #servicos article .container .content {
+        width: 30%;
+        background: var(--gray-800);
+        text-align: left;
+        padding: 2.5rem 2rem;
+        border-radius: 8px;
+        box-shadow: 0px 26px 58px rgba(0, 0, 0, 0.25);
+        border: 1px solid var(--blue-500);
+
+    }
+    #servicos .content i{
+        font-size: 2.5rem;
+        color: var(--blue-500);
+    }
+    #servicos .content h2{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #servicos .content p{
+        line-height: 1.5rem;
+        color: var(--blue-300);        
+    }
+
+    #experiencias {
+        margin-top: 3.125rem;
+    }
+
+    #experiencias h1{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #experiencias .container article{
+        border-bottom: 1px solid var(--gray-800);
+        padding-top: 1rem;
+        padding: 2.5rem 2rem;
+        color: var(--blue-500);
+        transition: background 1s;
+    }
+
+    #experiencias .container article:first-child {
+        border-top: 1px solid var(--gray-800);
+    }
+    #experiencias .container .empresa{
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    #experiencias .container .empresa span{
+        background: var(--blue-500);
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    #experiencias .container article:hover {
+        background: var(--blue-500);
+        color: var(--gray-100)
+    }
+    #experiencias .container article:hover .empresa span{
+        background: var(--gray-100);
+    }
 
 /* Estilos para telas pequenas */
 @media only screen and (max-width: 767px) {
