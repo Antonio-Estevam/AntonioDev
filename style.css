@@ -12,6 +12,10 @@ section{
     height: calc( 100vh - 80px);
     min-height: 90vh;
     margin: 0;  
+    padding-bottom: 200px;
+    
+    padding-bottom: 200px;
+
 }
 
 section {
@@ -24,19 +28,16 @@ main {
     max-width: 62%;
     /*padding: 3.125rem;*/
 }
-
-
-h1 {
-    font-size: 2.25rem;
-    margin-bottom: 2.5rem;
+.title-top{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
-/*#inicio*/ article{
+ article{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20%;
-    padding-bottom: 200px;
     z-index: 1;
 }
 
@@ -46,6 +47,7 @@ h1 {
 }
 
 #inicio article h1 {
+    margin-bottom: 1rem;
     font-size: 3.5rem;
     align-items: center;
     font-weight: 600;
@@ -79,15 +81,15 @@ h2 {
     text-decoration: none;
     font-size: 2rem;
     color: var(--gray-100);
-    background: #6042e8;
+    background: var(--blue-500);
     padding: 7px 6px 2px 6px;
     border-radius: 8px;
     filter: brightness(0.9);
-    transition: filter 2s;
+    transition: background-color 1s;
 }
 
 .links-redes-spcia a:hover{
-    filter: brightness(1.1);
+    background: var(--blue-700);
 }
 
 footer {    
@@ -101,7 +103,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--gray-800);
+        background-color: var(--gray-700);
         padding: 1.25rem;
         position: fixed;
         width: 100%;
@@ -141,9 +143,8 @@ footer {
         background: var(--gray-600)
     }
     .contatos:hover {
-        border: 1px solid var(--gray-400);
+        border: 1px solid var(--blue-700);
         color: var(--blue-700);
-        background: var(--blue-700)
     }
 
     #sobre {
@@ -223,6 +224,7 @@ footer {
 
     #experiencias {
         margin-top: 3.125rem;
+        padding-top: 200px;
     }
 
     #experiencias h1{
@@ -264,6 +266,76 @@ footer {
         background: var(--gray-100);
     }
 
+    #projetos {
+        padding-top: 200px;
+        margin-bottom: 200px;
+    }
+    
+    #projetos .container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    #projetos .container article{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+    #projetos .container article main{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        background: var(--gray-800);
+        border-radius: 8px;
+    }
+    
+    #projetos .container article main footer{
+        
+    }
+    
+    #contatos {
+        padding-top: 200px;
+    }
+    #contatos .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contatos .container p {
+        text-align: center;
+        font-size: 2.25rem;
+        padding-bottom: 2rem;
+    }
+    #contatos .container button { 
+        font-family: 'Archivo', sans-serif;       
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--gray-100);
+        background: var(--blue-500);
+        padding: 1rem 2rem;
+        border-radius: 32px;
+        border: none;
+        margin-bottom: 5rem;
+        transition: 1s;
+    }
+
+    #contatos .container button:hover {
+        background: var(--blue-700)
+    }
+
+    #contatos .container .links-redes-spcia a {
+        background: transparent;
+        border: 2px solid #ffffff00;
+    }
+    #contatos .container .links-redes-spcia a:hover {
+        border-color: var(--blue-500);
+    }
+
+    #contatos .container .links-redes-spcia a i {
+        color: var(--blue-500)
+    }
+   
 /* Estilos para telas pequenas */
 @media only screen and (max-width: 767px) {
     header {

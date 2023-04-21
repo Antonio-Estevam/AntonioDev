@@ -41,3 +41,16 @@ html {
      font-weight: 400;
      font-size: 1rem;
   } 
+
+  body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    /*background: #1c1c20;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--gray-700);    /* color of the scroll thumb */
+    border: 2px solid var(--gray-600);  /* creates padding around scroll thumb */
+  }
