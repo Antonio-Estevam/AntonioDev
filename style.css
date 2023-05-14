@@ -545,6 +545,10 @@ footer {
     #servicos article .container {
         flex-direction: column;
     }
+
+    #projetos .container {
+        flex-direction: column;
+    }
 }
 
 
